@@ -8,18 +8,33 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
+    // MARK: - Outlets
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var intensity: UISlider!
+    
+    // MARK: - View life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // MARK: - Actions
+    
+    @IBAction func changeFilter(_ sender: Any) {
     }
-
-
+    
+    // MARK: -
+    
+    @IBAction func save(_ sender: Any) {
+    }
+    
+    // MARK: -
+    
+    @IBAction func intensityChanged(_ sender: Any) {
+    }
 }
 
